@@ -14,7 +14,7 @@ Instrucciones de Uso:<br />
   <li>*A1.Guardar(descargar) la Webpage como "Pagina web, solo HTML"<br /></li>
   <li>Abrir este archivo(*A1) html descargado con el editor de texto.<br /></li>
   <li>Añadir(copy-paste el script de bot0.9.4.2v.js) el script en el archivo descargado(*A1)<br /></li>
-    - preferiblemente como el ultimo < s c r i p t > antes del <pre></body></pre>.<br /></li>
+    - preferiblemente como el ultimo < s c r i p t > antes del <pre>"< /body>"</pre>.<br /></li>
   <li>Dar Save y abrirlo en el mismo navegador donde lo desgargaste.<br /></li>
   <li>Ir al final de la pagina y abra una opcion de escojer un archivo de texto plano.<br /></li>
   <li>Escoges el archivo de texto plano y espera como 15s y listo.<br /></li>
