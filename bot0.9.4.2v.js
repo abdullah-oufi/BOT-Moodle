@@ -26,10 +26,7 @@
 		        if (file.type.match(textType)) {
 		            var reader = new FileReader();
 		            reader.onload = function(e) {
-		                //fileDisplayArea.innerText = reader.result;
 		                archivo.innerText = reader.result;
-		                //readTextFile(window.location.href);
-		                //BOT();
 		                BOT0_9();
 		            }
 		            reader.readAsText(file);    
@@ -39,16 +36,11 @@
 		    });
 	};
 
-	function findRespuesta(R){// R = la pregunta del html
+	function findRespuesta(R){
 		var respuesta_tmp = '';
 		var p = 0;
 		var respuesta_sin_n = archivo.innerText.indexOf( R.replace("\r\n","") );
 		var respuesta_sin_rn = archivo.innerText.indexOf( R.replace(/(?:\r\n|\r|\n)/g, '') );
-		//console.log("Ubicacion sin: "+archivo.innerText.indexOf(R));//ubicacion ####
-		//console.log("Ubicacion conR: "+respuesta_sin_n);//ubicacion ####
-		//console.log("Ubicacion conS: "+respuesta_sin_rn);//ubicacion ####
-		//console.log("STRING: "+R);// pregunta STRING
-		//console.log(archivo.innerText.search(R));
 		if (archivo.innerText.indexOf(R) != -1){
 			p = archivo.innerText.indexOf("--->" ,archivo.innerText.indexOf(R))+4;
 			while(	archivo.innerText[p]+archivo.innerText[p+1]+archivo.innerText[p+2] !=  "?-?"  ) 
@@ -60,19 +52,6 @@
 			}
 			return respuesta_tmp;
 		}
-
-		//else if( respuesta_sin_n != -1  ){
-		//	p = archivo.innerText.indexOf("--->" ,archivo.innerText.indexOf(R))+4;
-		//	while(	archivo.innerText[p]+archivo.innerText[p+1]+archivo.innerText[p+2] 
-		//		!=  "?-?"  ) 
-		//	{
-		//		if (archivo.innerText[p] === '\r\n') {break;}
-		//		if (archivo.innerText[p] === '\n') {break;}
-		//		respuesta_tmp += archivo.innerText[p];
-		//		p++;
-		//	}
-		//	return respuesta_tmp;
-		//}
 
 		else{return false;}			
 	};
@@ -88,20 +67,15 @@
 		while(document.getElementById("q"+qq)){
 
 			pregunta = document.getElementById("q"+qq).children[1].children[0].children[2].textContent;
-			//console.log(pregunta);
 			respEncontrada = findRespuesta(pregunta);
-			//console.log(respEncontrada);
 			doc = document.getElementById("q"+qq).childNodes[1];
-			//console.log(doc);
 			if (document.getElementById("q"+qq).classList[1] == "shortanswer") 
 			{	
-				//console.log("shortanswer");
 				childrens(doc , respEncontrada);
 				countings ++;
 			}
 			else if (document.getElementById("q"+qq).classList[1] == "multichoice") 
 			{
-				//console.log("multichoice");
 				childrenm(doc, respEncontrada);
 				countingm ++;
 			}
