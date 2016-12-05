@@ -24,5 +24,5 @@ Instrucciones de Uso:<br />
   ____________________________________________________________________________________________________
 
   
-  <a href="http://imgur.com/5SEgZJD">Gif explicativo<img src="http://i.imgur.com/5SEgZJD.gif" title="source: imgur.com" width="250px" /></a>
+  <a href="http://i.imgur.com/5SEgZJD.gif">Gif explicativo<img src="http://i.imgur.com/5SEgZJD.gif" title="source: imgur.com" width="250px" /></a>
 
