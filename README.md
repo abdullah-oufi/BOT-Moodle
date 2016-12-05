@@ -25,3 +25,4 @@ Instrucciones de Uso:<br />
 
   <img src="http://i.imgur.com/5SEgZJD.gif">
 
+<img src='http://i.imgur.com/5SEgZJD.gif' title='Video Gif' width='' alt='Video Walkthrough' />
