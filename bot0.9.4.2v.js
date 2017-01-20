@@ -81,7 +81,6 @@
 			}
 			else if (document.getElementById("q"+qq).classList[1] == "truefalse") 
 			{
-				//console.log("truefalse");
 				childrenm(doc, respEncontrada);
 				countingt ++;
 			}
