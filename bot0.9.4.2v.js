@@ -51,9 +51,7 @@
 				p++;
 			}
 			return respuesta_tmp;
-		}
-
-		else{return false;}			
+		}			
 	};
 
 	function BOT0_9(){
